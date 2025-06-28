@@ -28,3 +28,23 @@ app.post("/dekico", (req, res) => {
 app.lishen(3000, () => {
   log("server Running on port 3000");
 });
+
+// module.exports = (app) => {
+//   app.get("/users", (req, res) => {
+//     res.writeHead(200, { "Content-Type": "application/json" });
+//     res.end(JSON.stringify([{ id: 1, name: "Taufik" }]));
+//   });
+
+//   app.post("/users", (req, res) => {
+//     let body = "";
+//     req.on("data", (chunk) => {
+//       body += chunk.toString();
+//     });
+//     req.on("end", () => {
+//       res.writeHead(201, { "Content-Type": "application/json" });
+//       res.end(JSON.stringify({ message: "User created", data: JSON.parse(body) }));
+//     });
+//   });
+// };
+
+
